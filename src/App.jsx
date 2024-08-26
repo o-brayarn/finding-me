@@ -1,8 +1,15 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Navbar } from "./components";
+import { Homepage } from "./pages";
+
 function App() {
   return (
-    <div>
-      <p className="font-bold underline">Hello world</p>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage/>}/>
+      </Routes>
+    </Router>
   );
 }
 
