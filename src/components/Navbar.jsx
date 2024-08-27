@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import { IoChevronDown } from "react-icons/io5";
 import { RiCloseLine, RiMenu3Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
@@ -17,8 +18,22 @@ const NavLinks = ({ isOpen, setIsOpen }) => {
       </li>
       <li className="py-4 hover:underline hover:font-bold">
         <Link to="/about" onClick={() => isOpen && setIsOpen(false)}>
-          About
+          <div className="flex items-center gap-1">
+            <span>About</span>
+            <IoChevronDown />
+          </div>
         </Link>
+        <ul>
+          <li>
+            <Link to="/about/about">About Us</Link>
+          </li>
+          <li>
+            <Link to="/about/team">Our Team</Link>
+          </li>
+          <li>
+            <Link to="/about/history">Our History</Link>
+          </li>
+        </ul>
       </li>
       <li className="py-4 hover:underline hover:font-bold">
         <Link to="/blog" onClick={() => isOpen && setIsOpen(false)}>
@@ -32,7 +47,10 @@ const NavLinks = ({ isOpen, setIsOpen }) => {
       </li>
       <li className="py-4 hover:underline hover:font-bold whitespace-nowrap">
         <Link to="/take-action" onClick={() => isOpen && setIsOpen(false)}>
-          Take Action
+          <div className="flex items-center gap-1">
+            <span>Take Action</span>
+            <IoChevronDown />
+          </div>
         </Link>
       </li>
       <li className="py-4 hover:underline hover:font-bold whitespace-nowrap">
@@ -54,12 +72,15 @@ const Navbar = () => {
     <nav className="bg-[#2196C0] text-[#FFFFFF] sticky top-0 z-[20] shadow-sm">
       <div className="sm:me-5 sm:ms-5  flex justify-between items-center p-3 flex-wrap">
         <div className="sm:text-2xl text-xl font-thin whitespace-nowrap">
-          <h1>
-            <Link to="/" className="whitespace-nowrap">
-              {" "}
-              <span className="border-2 p-1 rounded-md">Finding</span> Me
-            </Link>
-          </h1>
+          <Link to="/" className="whitespace-nowrap">
+            <div className="flex items-center">
+              <div className=" flex items-center border-2 p-1 rounded-md whitespace-nowrap">
+                <span>FINDIN</span>
+                <FaSearch size={18} />
+              </div>
+              <span className="ms-2">ME</span>
+            </div>
+          </Link>
         </div>
 
         <NavLinks />
