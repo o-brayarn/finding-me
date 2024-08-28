@@ -4,7 +4,7 @@ import { IoChevronDown } from "react-icons/io5";
 import { RiCloseLine, RiMenu3Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-const NavLinks = ({ isOpen, setIsOpen }) => {
+const NavLinks = ({ isOpen, setIsOpen, clickDropdown, setClickDropdown }) => {
   return (
     <ul
       className={`lg:flex justify-around items-center ${
@@ -16,24 +16,38 @@ const NavLinks = ({ isOpen, setIsOpen }) => {
           Home
         </Link>
       </li>
-      <li className="py-4 hover:underline hover:font-bold">
-        <Link to="/about" onClick={() => isOpen && setIsOpen(false)}>
-          <div className="flex items-center gap-1">
-            <span>About</span>
-            <IoChevronDown />
-          </div>
-        </Link>
-        <ul>
-          <li>
-            <Link to="/about/about">About Us</Link>
-          </li>
-          <li>
-            <Link to="/about/team">Our Team</Link>
-          </li>
-          <li>
-            <Link to="/about/history">Our History</Link>
-          </li>
-        </ul>
+      <li
+        className="py-4 hover:underline hover:font-bold relative"
+        onClick={() => setClickDropdown(!clickDropdown)}
+      >
+        <div className="flex items-center gap-1">
+          <span>About</span>
+          <IoChevronDown />
+        </div>
+
+        {clickDropdown && (
+          <ul
+            className={`absolute top-full left-0 bg-[#2196C0] rounded-lg w-max p-2 mt-2 z-10 ${
+              clickDropdown ? "block" : "hidden"
+            } ${!isOpen ? "shadow-md" : ""}`}
+          >
+            <li className="font-normal pb-2 hover:underline">
+              <Link to="/about-us" onClick={() => isOpen && setIsOpen(false)}>
+                About Us
+              </Link>
+            </li>
+            <li className="font-normal py-2 hover:underline">
+              <Link to="/team" onClick={() => isOpen && setIsOpen(false)}>
+                Our Team
+              </Link>
+            </li>
+            <li className="font-normal py-2 hover:underline">
+              <Link to="/history" onClick={() => isOpen && setIsOpen(false)}>
+                Our History
+              </Link>
+            </li>
+          </ul>
+        )}
       </li>
       <li className="py-4 hover:underline hover:font-bold">
         <Link to="/blog" onClick={() => isOpen && setIsOpen(false)}>
@@ -68,6 +82,7 @@ const NavLinks = ({ isOpen, setIsOpen }) => {
 };
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [clickDropdown, setClickDropdown] = useState(false);
   return (
     <nav className="bg-[#2196C0] text-[#FFFFFF] sticky top-0 z-[20] shadow-sm">
       <div className="sm:me-5 sm:ms-5  flex justify-between items-center p-3 flex-wrap">
@@ -83,7 +98,10 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <NavLinks />
+        <NavLinks
+          clickDropdown={clickDropdown}
+          setClickDropdown={setClickDropdown}
+        />
 
         <div className="flex justify-center items-center gap-8">
           <button
@@ -106,7 +124,12 @@ const Navbar = () => {
 
         {isOpen && (
           <div className="basis-full flex flex-col items-center justify-center">
-            <NavLinks isOpen={isOpen} setIsOpen={setIsOpen} />
+            <NavLinks
+              isOpen={isOpen}
+              setIsOpen={setIsOpen}
+              clickDropdown={clickDropdown}
+              setClickDropdown={setClickDropdown}
+            />
           </div>
         )}
       </div>
