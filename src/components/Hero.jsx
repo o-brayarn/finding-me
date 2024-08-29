@@ -15,7 +15,7 @@ const Hero = () => {
             </p>
           </div>
           <div>
-            <button className="bg-[#64B454] py-2 px-4 text-xl font-bold">
+            <button className="bg-[#64B454] py-2 px-4 text-xl font-bold rounded-md">
               Learn More
             </button>
           </div>
