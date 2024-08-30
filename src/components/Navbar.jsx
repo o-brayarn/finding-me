@@ -35,7 +35,7 @@ const NavLinks = ({
         </Link>
         {clickDropdown && (
           <ul
-            className={`absolute top-full left-0 bg-[#2196C0] rounded-lg w-max p-2 mt-2 z-10 ${
+            className={`absolute top-full left-0 bg-[#087167] rounded-lg w-max p-2 mt-2 z-10 ${
               clickDropdown ? "block" : "hidden"
             } ${!isOpen ? "shadow-md" : ""}`}
           >
@@ -79,7 +79,7 @@ const NavLinks = ({
         </Link>
         {isDropdown && (
           <ul
-            className={`absolute top-full left-0 bg-[#2196C0] rounded-lg w-max p-2 mt-2 z-10 ${
+            className={`absolute top-full left-0 bg-[#087167] rounded-lg w-max p-2 mt-2 z-10 ${
               isDropdown ? "block" : "hidden"
             } ${!isOpen ? "shadow-md" : ""}`}
           >
@@ -122,7 +122,7 @@ const Navbar = () => {
   const [clickDropdown, setClickDropdown] = useState(false);
   const [isDropdown, setIsDropdown] = useState(false);
   return (
-    <nav className="bg-[#2196C0] text-[#FFFFFF] sticky top-0 z-[20] shadow-sm">
+    <nav className="bg-[#087167] text-[#FAF5E0] sticky top-0 z-[20] shadow-sm">
       <div className="sm:me-5 sm:ms-5  flex justify-between items-center p-3 flex-wrap">
         <div className="sm:text-2xl text-xl font-thin whitespace-nowrap">
           <Link to="/" className="whitespace-nowrap">
@@ -143,7 +143,7 @@ const Navbar = () => {
           setIsDropdown={setIsDropdown}
         />
 
-        <div className="flex justify-center items-center gap-8">
+        <div className="flex justify-center items-center sm:gap-8 gap-2">
           <button
             className={`md:flex border p-1 font-bold sm:text-2xl rounded-xl hidden ${
               !isOpen ? "" : "md:hidden"
