@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Navbar } from "./components";
+import { Footer, Navbar } from "./components";
 import {
   AboutUs,
   History,
@@ -23,6 +23,7 @@ function App() {
         <Route path="/partner-with-us" element={<Partner />} />
         <Route path="/volunteer" element={<Volunteer />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

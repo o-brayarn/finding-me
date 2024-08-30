@@ -1,9 +1,10 @@
-import { Hero } from "../components";
+import { Approach, Hero } from "../components";
 
 const Homepage = () => {
   return (
     <div className="h-full w-full">
       <Hero />
+      <Approach />
     </div>
   );
 };
