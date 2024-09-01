@@ -6,9 +6,12 @@ const Hero = () => {
   return (
     <div className="text-[#FAF5E0] bg-[url('/images/hero.png')] h-screen w-auto lg:h-[680px] bg-cover bg-center">
       <div className="backdrop-brightness-[0.30] h-full flex justify-center items-center">
-        <div className="md:ms-12 ms-5 me-5 flex flex-col gap-8">
-          <div className="">
-            <p className="md:w-1/2 w-full sm:text-[18px] font-medium text-justify leading-relaxed">
+        <div className="md:ms-40 ms-5 me-5 flex flex-col gap-8">
+          <div className="flex flex-col gap-5">
+            <h1 className="text-5xl md:w-1/5 font-bold">
+              You are <span className="text-[#087167] ">in safe hands.</span>
+            </h1>
+            <p className="md:w-1/2 w-full sm:text-[18px] font-medium leading-relaxed">
               Finding Me Mental Health Wellness (Finding Me) is a youth-led
               mental health organization founded in 2022; our mission is to
               cultivate a judgment-free community for individuals seeking
