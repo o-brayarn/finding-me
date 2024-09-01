@@ -124,11 +124,11 @@ const Navbar = () => {
   return (
     <nav className="bg-[#087167] text-[#FAF5E0] sticky top-0 z-[20] shadow-sm">
       <div className="sm:me-5 sm:ms-5  flex justify-between items-center p-3 flex-wrap">
-        <div className="sm:text-2xl text-xl font-thin whitespace-nowrap">
+        <div className="sm:text-2xl text-xl font-medium whitespace-nowrap">
           <Link to="/" className="whitespace-nowrap">
             <div className="flex items-center">
-              <div className=" flex items-center border-2 p-1 rounded-md whitespace-nowrap">
-                <span>FINDIN</span>
+              <div className="flex items-center p-1 rounded-md whitespace-nowrap text-[#087167] bg-[#FAF5E0]">
+                <span className="font-bold">FINDIN</span>
                 <FaSearch size={18} />
               </div>
               <span className="ms-2">ME</span>
