@@ -67,8 +67,8 @@ const Featured = () => {
                   <p className="text-[12px]">
                     {blog.content.substring(0, 150)}...
                   </p>
-                  <div className="flex justify-center items-center pt-4">
-                    <button className="bg-[#087167] text-[#FAF5E0] py-2 px-4 text-md font-medium rounded-md">
+                  <div className="flex justify-start items-center pt-4">
+                    <button className="bg-[#087167] text-[#FAF5E0] py-1.5 px-2 text-md font-medium rounded-md">
                       Read More...
                     </button>
                   </div>
