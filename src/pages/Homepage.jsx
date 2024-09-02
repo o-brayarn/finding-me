@@ -1,10 +1,12 @@
-import { Approach, Hero } from "../components";
+import { Approach, Featured, Hero, Values } from "../components";
 
 const Homepage = () => {
   return (
     <div className="h-full w-full bg-[#F5F5F5]">
       <Hero />
       <Approach />
+      <Values />
+      <Featured />
     </div>
   );
 };

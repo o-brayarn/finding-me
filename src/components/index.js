@@ -2,3 +2,5 @@ export { default as Navbar } from "./Navbar";
 export { default as Hero } from "./Hero";
 export { default as Approach } from "./Approach";
 export { default as Footer } from "./Footer";
+export { default as Values } from "./Values";
+export { default as Featured } from "./Featured";
