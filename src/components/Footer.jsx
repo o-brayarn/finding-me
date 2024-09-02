@@ -20,8 +20,8 @@ const Footer = () => {
         <div className="flex items-center sm:text-2xl text-xl font-thin whitespace-nowrap">
           <Link to="/" className="whitespace-nowrap">
             <div className="flex items-center">
-              <div className=" flex items-center border-2 p-1 rounded-md whitespace-nowrap">
-                <span>FINDIN</span>
+              <div className="flex items-center p-1 rounded-md whitespace-nowrap text-[#087167] bg-[#FAF5E0]">
+                <span className="font-bold">FINDIN</span>
                 <FaSearch size={18} />
               </div>
               <span className="ms-2">ME</span>
