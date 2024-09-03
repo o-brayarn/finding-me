@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Featured = () => {
+  const navigate = useNavigate();
   const blogData = [
     {
       title:
@@ -57,7 +60,7 @@ const Featured = () => {
             return (
               <div
                 key={i}
-                className="flex items-center border-2 border-[#087167] lg:w-1/4 md:w-2/5 sm:w-3/4 max-w-sm p-2 rounded-md shadow-xl mt-10"
+                className="flex items-center border border-[#087167] lg:w-1/4 md:w-2/5 sm:w-3/4 max-w-sm p-2 rounded-md shadow-xl mt-10"
               >
                 <div className="max-w-sm">
                   <img src={blog.illustration} className="rounded-md" />
@@ -67,8 +70,8 @@ const Featured = () => {
                   <p className="text-[12px]">
                     {blog.content.substring(0, 150)}...
                   </p>
-                  <div className="flex justify-start items-center pt-4">
-                    <button className="bg-[#087167] text-[#FAF5E0] py-1.5 px-2 text-md font-medium rounded-md">
+                  <div className="flex justify-start items-center pt-4 pb-1">
+                    <button className="border border-[#087167] shadow py-1.5 px-2 text-[13px] font-medium rounded-2xl">
                       Read More...
                     </button>
                   </div>
@@ -77,6 +80,7 @@ const Featured = () => {
             );
           })}
         </div>
+
         <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center">
           <h1 className="mt-10 text-[18px] text-[#087167] font-semibold">
             Featured
@@ -97,10 +101,11 @@ const Featured = () => {
           </p> */}
         </div>
       </div>
+
       <div className="flex justify-center items-center pt-10">
         <button
           className="bg-[#087167] text-[#FAF5E0] py-2 px-4 text-xl font-bold rounded-md  gap-2"
-          onClick={() => navigate("/about-us")}
+          onClick={() => navigate("/blog")}
         >
           Explore More
         </button>
