@@ -1,4 +1,4 @@
-import { Approach, Featured, Hero, Values } from "../components";
+import { Approach, Featured, Feedback, Hero, Values } from "../components";
 
 const Homepage = () => {
   return (
@@ -7,6 +7,7 @@ const Homepage = () => {
       <Approach />
       <Values />
       <Featured />
+      <Feedback />
     </div>
   );
 };

@@ -4,3 +4,4 @@ export { default as Approach } from "./Approach";
 export { default as Footer } from "./Footer";
 export { default as Values } from "./Values";
 export { default as Featured } from "./Featured";
+export { default as Feedback } from "./Feedback";
