@@ -5,3 +5,5 @@ export { default as Footer } from "./Footer";
 export { default as Values } from "./Values";
 export { default as Featured } from "./Featured";
 export { default as Feedback } from "./Feedback";
+export { default as CallToAction } from "./CallToAction";
+export { default as SocialProof } from "./SocialProof";
