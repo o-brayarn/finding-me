@@ -126,7 +126,7 @@ const Feedback = () => {
               className="text-2xl cursor-pointer"
               onClick={() => setCurrentIndex(slideIndex)}
             >
-              <RxDotFilled />
+              <RxDotFilled style={{ color: "#087167" }} />
             </div>
           ))}
         </div>
