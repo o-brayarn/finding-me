@@ -46,6 +46,35 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      {/* OUR GOALS */}
+      <div className="bg-[#087167] mt-5 mb-5 pl-8 w-full text-[#FAF5E0] pb-10">
+        <h1 className="text-3xl font-bold pt-10 md:pt-20 mb-8 text-center">
+          <span className="text-black">Our </span> Goals
+        </h1>
+        <div className="md:ms-20 ms-5 me-5">
+          <p className="md:text-[20px] sm:text-[18px] pb-2 text-start font-light">
+            Finding Me is dedicated to ensuring individuals participating in Our
+            Forums:
+          </p>
+          <ul className="list-disc list-inside md:text-[20px] sm:text-[18px] font-sans pb-10 md:pb-20">
+            <li className="pb-1.5">Are more self-aware</li>
+            <li className="pb-1.5">
+              Can confidently deal with life’s challenges and stresses in a
+              healthy way
+            </li>
+            <li className="pb-1.5">
+              Meet like-minded individuals with who they can have honest and
+              genuine conversations with
+            </li>
+            <li className="pb-1.5">
+              Are empowered to be confident enough to live authentic lives by
+              taking charge of their emotions, thoughts and perceptions
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* GUIDING BELIEFS AND VALUES */}
     </div>
   );
 };
