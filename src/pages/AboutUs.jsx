@@ -1,6 +1,7 @@
 const AboutUs = () => {
   return (
     <div className="w-auto overflow-hidden bg-[#F5F5F5]">
+      {/* Header */}
       <div className="relative">
         <div className="h-full sm:h-[] w-full brightness-[0.30]">
           <img
@@ -22,7 +23,7 @@ const AboutUs = () => {
       </div>
       {/* OUR MISSION */}
       <div className="md:mt-20 mt-10">
-        <h1 className="sm:hidden sm:text-3xl text-2xl font-bold mt-10 md:mt-20 mb-8 text-center">
+        <h1 className="sm:hidden md:text-5xl sm:text-3xl text-2xl font-bold mt-10 md:mt-20 mb-8 text-center">
           Our Mission
         </h1>
         <div className="ms-10 me-5 flex sm:justify-center justify-start sm:flex-nowrap flex-wrap items-start gap-12">
@@ -34,7 +35,7 @@ const AboutUs = () => {
             />
           </div>
           <div className="lg:w-1/2">
-            <h1 className="hidden sm:block lg:text-3xl md:text-2xl text-xl font-bold mt-5 mb-5">
+            <h1 className="hidden sm:block md:text-5xl sm:text-3xl text-2xl font-bold mt-5 mb-5">
               Our Mission
             </h1>
             <p className="md:text-[20px] sm:text-[18px] text-[16px]">
@@ -48,7 +49,7 @@ const AboutUs = () => {
       </div>
       {/* OUR GOALS */}
       <div className="bg-[#087167] mt-5 mb-5 pl-8 w-full text-[#FAF5E0] pb-10">
-        <h1 className="text-3xl font-bold pt-10 md:pt-20 mb-8 text-center">
+        <h1 className="md:text-5xl sm:text-3xl text-2xl  font-bold pt-10 md:pt-20 mb-8 text-center">
           <span className="text-black">Our </span> Goals
         </h1>
         <div className="md:ms-20 ms-5 me-5">
@@ -56,7 +57,7 @@ const AboutUs = () => {
             Finding Me is dedicated to ensuring individuals participating in Our
             Forums:
           </p>
-          <ul className="list-disc list-inside md:text-[20px] sm:text-[18px] font-sans pb-10 md:pb-20">
+          <ul className="list-disc list-inside sm:text-[18px] font-extralight pb-10 md:pb-20">
             <li className="pb-1.5">Are more self-aware</li>
             <li className="pb-1.5">
               Can confidently deal with life’s challenges and stresses in a
@@ -75,6 +76,73 @@ const AboutUs = () => {
       </div>
 
       {/* GUIDING BELIEFS AND VALUES */}
+      <div>
+        <h1 className="md:text-5xl sm:text-3xl text-2xl font-bold pt-10 mb-8 text-center">
+          Our Guiding Beliefs & Values
+        </h1>
+        <p className="md:ms-20 ms-10 me-5">
+          We all deserve a supportive and respectful environment to express our
+          emotions and someone to listen to us. Finding Me brings like-minded
+          individuals together in shared spaces to support one another and
+          normalize discussions about mental health. We accomplish this by
+          upholding the following values and beliefs:
+        </p>
+        <div className="md:grid grid-cols-2 justify-items-center content-center  md:ms-10 ms-5 md:mt-8 mt-5">
+          <div className="md:w-3/4 gap-4 mt-4 divide-y divide-[#087167]">
+            <h1 className="md:text-2xl text-xl font-semibold">Visionary</h1>
+            <p className="pt-2 font-extralight">
+              We have a clear idea of the future we want. We uphold this ideal
+              by encouraging our participants to embrace this belief to build
+              the future they want by taking charge of their lives while coping
+              with the stresses of life.
+            </p>
+          </div>
+
+          <div className="md:w-3/4 gap-4 mt-4 divide-y divide-[#087167]">
+            <h1 className="md:text-2xl text-xl font-semibold">Openness</h1>
+            <p className="pt-2 font-extralight">
+              Opening individuals to new experiences- uncomfortable and the
+              unfamiliar- enabling them to pay attention to their inner
+              feelings, and embracing their authentic selves. 
+            </p>
+          </div>
+
+          <div className="md:w-3/4 gap-4 mt-4 divide-y divide-[#087167]">
+            <h1 className="md:text-2xl text-xl font-semibold">Integrity</h1>
+            <p className="pt-2 font-extralight">
+              We firmly adhere to the morals and standards we set.
+            </p>
+          </div>
+
+          <div className="md:w-3/4 gap-4 mt-4 divide-y divide-[#087167]">
+            <h1 className="md:text-2xl text-xl font-semibold">
+              Confidentiality
+            </h1>
+            <p className="pt-2 font-extralight">
+              Sincerity in how we treat each other every day and acceptance of
+              everyone's right to privacy. We do not disclose matters discussed
+              in forums/sessions.  
+            </p>
+          </div>
+
+          <div className="md:w-3/4 gap-4 mt-4 divide-y divide-[#087167]">
+            <h1 className="md:text-2xl text-xl font-semibold">Empathy</h1>
+            <p className="pt-2 font-extralight">
+              We recognize, understand and acknowledge each person’s journey to
+              self-discovery and healing.
+            </p>
+          </div>
+
+          <div className="md:w-3/4 gap-4 mt-4 divide-y divide-[#087167]">
+            <h1 className="md:text-2xl text-xl font-semibold">Service</h1>
+            <p className="pt-2 font-extralight">
+              We are keen on providing quality in what we do. We also empower
+              individuals to speak up and participate in their care and the care
+              of others through service to humanity.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
