@@ -80,7 +80,7 @@ const AboutUs = () => {
         <h1 className="md:text-5xl sm:text-3xl text-2xl font-bold pt-10 mb-8 text-center">
           Our Guiding Beliefs & Values
         </h1>
-        <p className="md:ms-20 ms-10 me-5">
+        <p className="md:ms-20 sm:10 ms-5 me-5">
           We all deserve a supportive and respectful environment to express our
           emotions and someone to listen to us. Finding Me brings like-minded
           individuals together in shared spaces to support one another and
