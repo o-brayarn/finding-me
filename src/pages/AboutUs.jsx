@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <div className="w-auto overflow-hidden">
+    <div className="w-auto overflow-hidden bg-[#F5F5F5]">
       <div className="relative">
         <div className="h-full sm:h-[] w-full brightness-[0.30]">
           <img
@@ -21,18 +21,29 @@ const AboutUs = () => {
         </div>
       </div>
       {/* OUR MISSION */}
-      <div>
-        <h1>Our Mission</h1>
-        <div className="ms-10 me-5 flex justify-between gap-8">
-          <div className="">
-            <img src="/images/vision.png" alt="" className="rounded-tl-3xl" />
+      <div className="md:mt-20 mt-10">
+        <h1 className="sm:hidden sm:text-3xl text-2xl font-bold mt-10 md:mt-20 mb-8 text-center">
+          Our Mission
+        </h1>
+        <div className="ms-10 me-5 flex sm:justify-center justify-start sm:flex-nowrap flex-wrap items-start gap-12">
+          <div className="lg:rounded-full rounded-3xl">
+            <img
+              src="/images/vision.png"
+              alt="Our Mission"
+              className="object-cover object-center lg:rounded-full rounded-3xl"
+            />
           </div>
-
-          <p className="lg:w-1/2">
-            To empower young people to take control of their lives by providing
-            them with judgment-free spaces to engage in genuine conversations
-            about mental health issues to improve their general well-being.
-          </p>
+          <div className="lg:w-1/2">
+            <h1 className="hidden sm:block lg:text-3xl md:text-2xl text-xl font-bold mt-5 mb-5">
+              Our Mission
+            </h1>
+            <p className="md:text-[20px] sm:text-[18px] text-[16px]">
+              To empower young people to take control of their lives by
+              providing them with judgment-free spaces to engage in genuine
+              conversations about mental health issues to improve their general
+              well-being.
+            </p>
+          </div>
         </div>
       </div>
     </div>
