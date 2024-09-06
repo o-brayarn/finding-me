@@ -1,57 +1,57 @@
 import { useNavigate } from "react-router-dom";
 
+const blogData = [
+  {
+    title:
+      "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
+    illustration:
+      "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
+    content:
+      "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
+  },
+  {
+    title:
+      "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
+    illustration:
+      "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
+    content:
+      "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
+  },
+  {
+    title:
+      "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
+    illustration:
+      "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
+    content:
+      "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
+  },
+  {
+    title:
+      "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
+    illustration:
+      "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
+    content:
+      "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
+  },
+  {
+    title:
+      "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
+    illustration:
+      "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
+    content:
+      "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
+  },
+  {
+    title:
+      "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
+    illustration:
+      "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
+    content:
+      "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
+  },
+];
 const Featured = () => {
   const navigate = useNavigate();
-  const blogData = [
-    {
-      title:
-        "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
-      illustration:
-        "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content:
-        "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
-    },
-    {
-      title:
-        "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
-      illustration:
-        "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content:
-        "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
-    },
-    {
-      title:
-        "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
-      illustration:
-        "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content:
-        "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
-    },
-    {
-      title:
-        "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
-      illustration:
-        "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content:
-        "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
-    },
-    {
-      title:
-        "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
-      illustration:
-        "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content:
-        "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
-    },
-    {
-      title:
-        "Finding Me collaborates with Safaricom in Mental Health Awareness Month",
-      illustration:
-        "https://images.pexels.com/photos/3601097/pexels-photo-3601097.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content:
-        "Finding Me Mental Health Society was yesterday at the forefront of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio asperiores magni iste sit, voluptate eligendi aliquam distinctio nam excepturi.",
-    },
-  ];
   return (
     <div className="h-full xl:pt-28 pt-10">
       <div className="md:ms-10 md:me-10 ms-5 me-5 flex xl:flex-row flex-col-reverse justify-between gap-8">
