@@ -5,3 +5,4 @@ export { default as Team } from "./Team";
 export { default as Join } from "./Join";
 export { default as Volunteer } from "./Volunteer";
 export { default as Partner } from "./Partner";
+export { default as Blog } from "./Blog";

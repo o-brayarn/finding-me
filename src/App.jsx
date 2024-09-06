@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components";
 import {
   AboutUs,
+  Blog,
   History,
   Homepage,
   Join,
@@ -22,6 +23,7 @@ function App() {
         <Route path="/join" element={<Join />} />
         <Route path="/partner-with-us" element={<Partner />} />
         <Route path="/volunteer" element={<Volunteer />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </Router>
