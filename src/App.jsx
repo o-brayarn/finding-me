@@ -3,6 +3,7 @@ import { Footer, Navbar } from "./components";
 import {
   AboutUs,
   Blog,
+  Contact,
   History,
   Homepage,
   Join,
@@ -24,6 +25,7 @@ function App() {
         <Route path="/partner-with-us" element={<Partner />} />
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
