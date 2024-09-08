@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { IoChevronDown } from "react-icons/io5";
 import { RiCloseLine, RiMenu3Fill } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavLinks = ({
   isOpen,
@@ -121,6 +121,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [clickDropdown, setClickDropdown] = useState(false);
   const [isDropdown, setIsDropdown] = useState(false);
+
+  const navigate = useNavigate();
   return (
     <nav className="bg-[#087167] text-[#FAF5E0] sticky top-0 z-[20] shadow-sm">
       <div className="sm:me-5 sm:ms-5  flex justify-between items-center p-3 flex-wrap">
@@ -145,6 +147,7 @@ const Navbar = () => {
 
         <div className="flex justify-center items-center sm:gap-8 gap-2">
           <button
+            onClick={() => navigate("/contact")}
             className={`md:flex border p-1 font-bold sm:text-2xl rounded-xl hidden ${
               !isOpen ? "" : "md:hidden"
             }`}
