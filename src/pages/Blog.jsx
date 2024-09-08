@@ -94,24 +94,36 @@ const Blog = () => {
           </h1>
         </div>
 
-        <div className="md:mt-10 lg:ms-20 lg:me-20 sm:ms-10 sm:me-10 mt-5 ms-5 me-5 flex justify-center gap-2 bg-[#087167] md:h-[350px] text-[#FAF5E0] md:pb-0 pb-4">
-          <div className="md:w-1/2 md:h-full h-64 w-full bg-slate-800 overflow-hidden">
-            <img
-              src={blogData[0].src}
-              alt={blogData[0].title.substring(0, 30)}
-              className="object-cover h-full w-full"
-            />
-          </div>
-          <div className="md:w-1/2 lg:ms-0 ms-2 lg:me-0 me-2">
-            <h1 className="font-bold lg:text-2xl text-xl">
-              {blogData[0].title}
-            </h1>
-            <h3 className="text-[14px] italic mb-2">{blogData[0].date}</h3>
-            <p>{blogData[0].content}</p>
-            <button className="bg-[#FAF5E0] text-[#087167] font-bold px-3 py-2 mt-2 rounded-md pb-2">
-              Read More
-            </button>
-          </div>
+        <div className="mt-5 flex justify-center gap-4 flex-wrap sm:ms-0 sm:me-0 ms-10 text-[#FAF5E0]">
+          {blogData?.slice(0, 8).map((blog, i) => {
+            return (
+              <div key={i} className="lg:w-1/5 sm:1/4 w-auto">
+                <div className="bg-[#087167] max-w-sm rounded-md">
+                  <img
+                    src={blog.src}
+                    alt={blog.title.substring(0, 30)}
+                    className="object-cover w-full max-h-48 rounded-t-md"
+                  />
+
+                  <div className="ms-2 me-2">
+                    <h1 className="font-bold lg:text-2xl text-xl">
+                      {blog.title}
+                    </h1>
+                    <h3 className="text-[14px] italic mb-2">{blog.date}</h3>
+                    <p>{blog.content.substring(0, 180)}...</p>
+                    <button className="bg-[#FAF5E0] text-[#087167] font-bold px-3 py-2 mt-2 rounded-md mb-4">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="sm:mt-8 mt-5 flex justify-center items-center">
+          <button className="text-[#FAF5E0] bg-[#3A66B1] py-2 px-5 rounded-2xl">
+            Load more posts
+          </button>
         </div>
       </div>
     </div>
