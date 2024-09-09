@@ -43,7 +43,7 @@ const Values = () => {
         <h1 className="mt-10 text-[#087167] text-[18px] font-semibold">
           Our Values
         </h1>
-        <h2 className="sm:text-3xl text-2xl font-bold mt-2">
+        <h2 className="sm:text-3xl text-2xl font-bold mt-2 ms-5">
           Rethinking mental health awareness
         </h2>
       </div>
