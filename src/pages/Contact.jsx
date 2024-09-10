@@ -49,13 +49,47 @@ const Contact = () => {
         </div>
       </div>
 
-      <div>
-        <h1>Drop us a line...</h1>
-        <p>
+      <div className="mt-5">
+        <h1 className="text-2xl font-semibold">Drop us a line...</h1>
+        <p className="md:w-2/3">
           Please send us an email with a bit about yourself and how we can be of
           help. We will be in touch as soon as possible with some ideas.
         </p>
-        <form></form>
+        <form className="flex flex-col sm:gap-8 gap-4 ms-2 me-5 md:mt-10 mt-5">
+          <div className="flex sm:flex-row flex-col justify-start gap-4">
+            <input
+              type="text"
+              placeholder="First Name"
+              className="md:w-1/3 pb-2 pt-2 ps-2 border rounded-md"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              className="md:w-1/3 pb-2 pt-2 ps-2 border rounded-md"
+            />
+          </div>
+          <div className="flex sm:flex-row flex-col justify-start gap-4">
+            <input
+              type="text"
+              placeholder="Email"
+              className="md:w-1/3 pb-2 pt-2 ps-2 border rounded-md"
+            />
+            <input
+              type="text"
+              placeholder="Phone Number"
+              className="md:w-1/3 pb-2 pt-2 ps-2 border rounded-md"
+            />
+          </div>
+          <textarea
+            placeholder="How can we help you?"
+            className="ps-2 sm:h-[240px] h-[120px] sm:w-2/3 border focus:border-hidden rounded-md pt-2"
+          />
+          <input
+            type="button"
+            value="Get in touch"
+            className="bg-[#087167] w-fit px-4 py-2 rounded-xl text-[#FAF5E0]"
+          />
+        </form>
       </div>
     </div>
   );
