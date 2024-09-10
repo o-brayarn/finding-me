@@ -33,6 +33,67 @@ const Volunteer = () => {
           </p>
         </div>
       </div>
+      <div className="ms-5 me-5 md:ms-10 mt-10">
+        <h1 className="text-center text-2xl font-bold">VOLUNTEER WITH US</h1>
+        <p>
+          Volunteers bring fresh perspectives and help us extend our impact to
+          hundreds more living with mental health issues in Kenya. From serving
+          as mentors to helping couch our youths on how they can become mentally
+          aware of what they are going through, volunteers are key to what we
+          do, and we are always in search of individuals who are interested in
+          bringing their unique skills to volunteer with Finding Me.{" "}
+        </p>
+        <form className="mx-auto mt-5 border-2 border-[#087167] md:w-3/4 flex flex-col gap-4 p-8">
+          <div className="flex justify-start items-center flex-wrap gap-4">
+            <input
+              type="text"
+              placeholder="First Name"
+              className="border border-[#06141B] rounded pt-2 pb-2 sm:w-2/5 w-full ps-2 bg-inherit"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              className="border border-[#06141B] rounded pt-2 pb-2 sm:w-2/5 w-full ps-2 bg-inherit"
+            />
+          </div>
+          <div className="flex justify-start items-center flex-wrap gap-4">
+            <input
+              type="email"
+              placeholder="Email"
+              className="border border-[#06141B] rounded pt-2 pb-2 sm:w-2/5 w-full ps-2 bg-inherit"
+            />
+            <input
+              type="text"
+              placeholder="Phone Number"
+              className="border border-[#06141B] rounded pt-2 pb-2 sm:w-2/5 w-full ps-2 bg-inherit"
+            />
+          </div>
+          <div className="flex justify-start items-center flex-wrap gap-4">
+            <input
+              type="text"
+              placeholder="City/State"
+              className="border border-[#06141B] rounded pt-2 pb-2 sm:w-2/5 w-full ps-2 bg-inherit"
+            />
+            <input
+              type="text"
+              placeholder="Country"
+              className="border border-[#06141B] rounded pt-2 pb-2 sm:w-2/5 w-full ps-2 bg-inherit"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Purpose/How can you contribute to Finding Me?"
+              className="border border-[#06141B] rounded pt-2 pb-2 sm:w-4/5 w-full mb-8 ps-2 bg-inherit"
+            />
+            <input
+              type="button"
+              value="SEND"
+              className="block bg-[#087167] text-center text-[#FAF5E0] px-4 py-1.5 font-bold"
+            />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
