@@ -3,7 +3,7 @@ const AboutUs = () => {
     <div className="w-auto overflow-hidden bg-[#F5F5F5]">
       {/* Header */}
       <div className="relative">
-        <div className="h-full sm:h-[] w-full brightness-[0.30]">
+        <div className="h-full w-full brightness-[0.30]">
           <img
             src="/images/about.png"
             alt="people"
