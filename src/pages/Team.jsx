@@ -74,7 +74,7 @@ const teamData = [
 ];
 const Team = () => {
   return (
-    <div>
+    <div className="bg-[#F5F5F5]">
       <div className="relative">
         <div className="h-full w-full brightness-[0.3]">
           <img
