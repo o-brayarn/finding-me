@@ -95,7 +95,14 @@ const Team = () => {
       </div>
       <div className="mt-10">
         <h1 className="text-3xl font-bold text-center">Meet Our Team</h1>
-        <div className="flex justify-center"></div>
+        <div className="flex justify-center">
+          <img src="" alt="" />
+          <h1>Name</h1>
+          <p>Role</p>
+          <p>about</p>
+          <a> X Account</a>
+          <a> linkedInUrl</a>
+        </div>
       </div>
     </div>
   );
