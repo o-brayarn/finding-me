@@ -94,11 +94,14 @@ const Blog = () => {
           </h1>
         </div>
 
-        <div className="mt-5 flex justify-center gap-4 flex-wrap sm:ms-0 sm:me-0 ms-10 text-[#FAF5E0]">
+        <div className="mt-5 flex justify-center gap-4 flex-wrap sm:ms-0 sm:me-0 ms-10 text-[#06141B]">
           {blogData?.slice(0, 8).map((blog, i) => {
             return (
-              <div key={i} className="lg:w-1/5 sm:1/4 w-auto">
-                <div className="bg-[#087167] max-w-sm rounded-md">
+              <div
+                key={i}
+                className="lg:w-1/5 sm:1/4 w-auto border border-[#087167] rounded-md shadow-md p-2"
+              >
+                <div className="bg-[#F5F5F5] max-w-sm rounded-md">
                   <img
                     src={blog.src}
                     alt={blog.title.substring(0, 30)}
@@ -111,7 +114,7 @@ const Blog = () => {
                     </h1>
                     <h3 className="text-[14px] italic mb-2">{blog.date}</h3>
                     <p>{blog.content.substring(0, 180)}...</p>
-                    <button className="bg-[#FAF5E0] text-[#087167] font-bold px-3 py-2 mt-2 rounded-md mb-4">
+                    <button className="text-[#FAF5E0] bg-[#087167] font-bold px-3 py-2 mt-2 rounded-md mb-4">
                       Read More
                     </button>
                   </div>
