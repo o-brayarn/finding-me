@@ -8,6 +8,7 @@ import {
   Homepage,
   Join,
   Partner,
+  Share,
   Team,
   Volunteer,
 } from "./pages";
@@ -26,6 +27,7 @@ function App() {
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/share-your-story" element={<Share />} />
       </Routes>
       <Footer />
     </Router>
