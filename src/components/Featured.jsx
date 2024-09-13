@@ -54,7 +54,21 @@ const Featured = () => {
   const navigate = useNavigate();
   return (
     <div className="h-full xl:pt-28 pt-10">
-      <div className="md:ms-10 md:me-10 ms-5 me-5 flex xl:flex-row flex-col-reverse justify-between gap-8">
+      <div className="md:ms-10 md:me-10 ms-5 me-5 flex xl:flex-row flex-col justify-between gap-8">
+        <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center">
+          <h1 className="mt-10 text-[18px] text-[#087167] font-semibold">
+            Featured
+          </h1>
+          <h2 className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold mt-2">
+            A lot is happening,{" "}
+            <span className="text-[#087167]">and we are blogging about it</span>
+            ...
+          </h2>
+          <p className="mt-4 w-full">
+            Check out a few of our most recent blog articles and leave us your
+            thoughts.
+          </p>
+        </div>
         <div className="flex justify-center gap-12 flex-wrap ">
           {blogData.slice(0, 6).map((blog, i) => {
             return (
@@ -79,26 +93,6 @@ const Featured = () => {
               </div>
             );
           })}
-        </div>
-
-        <div className="flex flex-col xl:justify-start justify-center xl:items-start items-center">
-          <h1 className="mt-10 text-[18px] text-[#087167] font-semibold">
-            Featured
-          </h1>
-          <h2 className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold mt-2">
-            A lot is happening,{" "}
-            <span className="text-[#087167]">and we are blogging about it</span>
-            ...
-          </h2>
-          {/* <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad odio
-            asperiores magni iste sit, voluptate eligendi aliquam distinctio nam
-            excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Ad odio asperiores magni iste sit, voluptate eligendi aliquam
-            distinctio nam excepturi.Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Ad odio asperiores magni iste sit, voluptate
-            eligendi aliquam distinctio nam excepturi.
-          </p> */}
         </div>
       </div>
 
