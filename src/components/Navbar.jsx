@@ -105,7 +105,7 @@ const NavLinks = ({
         )}
       </li>
       <li className="py-4 hover:underline hover:font-bold whitespace-nowrap">
-        <Link to="/story" onClick={() => isOpen && setIsOpen(false)}>
+        <Link to="/share-your-story" onClick={() => isOpen && setIsOpen(false)}>
           Share Your Story
         </Link>
       </li>
