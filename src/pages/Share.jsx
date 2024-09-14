@@ -27,6 +27,7 @@ const Share = () => {
       </div>
       <div className="">
         <form className="">
+          <input type="file" name="file" />
           <button className="block font-bold mb-5">
             Choose a category{" "}
             <span className="text-center">
@@ -41,7 +42,7 @@ const Share = () => {
             <input
               type="button"
               value="Submit"
-              className="block text-[#faf5e0] bg-[#087167] md:px-8 px-5 py-1 md:text-xl rounded-full text-center"
+              className="block text-[#faf5e0] bg-[#087167] md:px-8 px-5 py-1 md:text-xl rounded-md text-center cursor-pointer hover:bg-[#06141B] font-bold"
             />
           </div>
         </form>
