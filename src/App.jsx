@@ -4,6 +4,7 @@ import {
   AboutUs,
   Blog,
   Contact,
+  Events,
   History,
   Homepage,
   Join,
@@ -28,6 +29,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/share-your-story" element={<Share />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
       <Footer />
     </Router>
