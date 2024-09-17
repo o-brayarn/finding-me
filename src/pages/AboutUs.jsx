@@ -23,7 +23,7 @@ const AboutUs = () => {
       </div>
       {/* OUR MISSION */}
       <div className="md:pt-20 pt-10 pb-10">
-        <h1 className="sm:hidden md:text-5xl sm:text-3xl text-2xl font-bold mt-10 md:mt-20 mb-8 text-center">
+        <h1 className="sm:hidden md:text-5xl sm:text-3xl text-2xl font-bold mt-10 md:mt-20 text-center">
           Our Mission
         </h1>
         <div className="ms-10 me-5 flex sm:justify-center justify-start items-center sm:flex-nowrap flex-wrap gap-12">
@@ -49,10 +49,10 @@ const AboutUs = () => {
       </div>
       {/* OUR GOALS */}
       <div className="bg-[#087167] pt-5 mb-5 pl-8 md:me-10 md:ms-10 rounded-xl text-[#FAF5E0] pb-10">
-        <h1 className="md:text-5xl sm:text-3xl text-2xl  font-bold pt-10 md:pt-20 mb-8 text-center">
+        <h1 className="md:text-5xl sm:text-3xl text-2xl  font-bold pt-10 text-center">
           Our Goals
         </h1>
-        <div className="md:ms-20 ms-5 me-5">
+        <div className="md:ms-20 ms-5 me-5 mt-5">
           <p className="md:text-[20px] sm:text-[18px] pb-2 text-start font-light">
             Finding Me is dedicated to ensuring individuals participating in Our
             Forums:
