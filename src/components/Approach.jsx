@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const Approach = () => {
   const navigate = useNavigate();
   return (
-    <div className="md:ms-10 md:me-10 md:rounded-xl  h-full bg-[#f0ffee] pb-10">
+    <div className="md:ms-10 md:me-10 md:rounded-xl  h-full bg-[#087167]/[20%] pb-10">
       <div className="md:flex justify-center items-center gap-36 mt-10 sm:pl-10 pl-5 pr-5">
         <div className="lg:w-1/4 md:w-1/2 flex flex-col">
           <h1 className="mt-10 text-[#087167] text-[18px] font-semibold">

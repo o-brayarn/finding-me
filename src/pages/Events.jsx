@@ -48,7 +48,7 @@ const Events = () => {
           </div>
         </div>
 
-        <button className="md:ms-14 sm:ms-10 font-semibold">
+        <button className="md:ms-14 sm:ms-10 ms-5 font-semibold">
           More upcoming events...
         </button>
       </div>
@@ -57,7 +57,7 @@ const Events = () => {
         <h1 className="md:text-3xl text-2xl font-bold text-center pt-8 sm:ms-0 ms ms-5">
           PAST EVENTS
         </h1>
-        <div className="md:ms-14 sm:ms-10 flex items-center mt-5 cursor-pointer">
+        <div className="md:ms-14 sm:ms-10 ms-5 flex items-center mt-5 cursor-pointer">
           <p>
             Sort by:{" "}
             <span className="text-[#06141B]/[60%]"> Default order</span>

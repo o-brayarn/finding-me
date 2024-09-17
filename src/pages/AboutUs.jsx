@@ -22,19 +22,19 @@ const AboutUs = () => {
         </div>
       </div>
       {/* OUR MISSION */}
-      <div className="md:mt-20 mt-10">
+      <div className="md:pt-20 pt-10 pb-10">
         <h1 className="sm:hidden md:text-5xl sm:text-3xl text-2xl font-bold mt-10 md:mt-20 mb-8 text-center">
           Our Mission
         </h1>
-        <div className="ms-10 me-5 flex sm:justify-center justify-start sm:flex-nowrap flex-wrap items-start gap-12">
-          <div className="lg:rounded-full rounded-3xl">
+        <div className="ms-10 me-5 flex sm:justify-center justify-start items-center sm:flex-nowrap flex-wrap gap-12">
+          <div className="lg:rounded-full xl:w-1/3 lg:w-1/2 sm:w-3/4 rounded-md">
             <img
-              src="/images/vision.png"
+              src="/images/volunteer.png"
               alt="Our Mission"
-              className="object-cover object-center lg:rounded-full rounded-3xl"
+              className="object-cover object-center rounded-md"
             />
           </div>
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 sm:w-2/3">
             <h1 className="hidden sm:block md:text-5xl sm:text-3xl text-2xl font-bold mt-5 mb-5">
               Our Mission
             </h1>
@@ -48,9 +48,9 @@ const AboutUs = () => {
         </div>
       </div>
       {/* OUR GOALS */}
-      <div className="bg-[#087167] mt-5 mb-5 pl-8 w-full text-[#FAF5E0] pb-10">
+      <div className="bg-[#087167] pt-5 mb-5 pl-8 md:me-10 md:ms-10 rounded-xl text-[#FAF5E0] pb-10">
         <h1 className="md:text-5xl sm:text-3xl text-2xl  font-bold pt-10 md:pt-20 mb-8 text-center">
-          <span className="text-black">Our </span> Goals
+          Our Goals
         </h1>
         <div className="md:ms-20 ms-5 me-5">
           <p className="md:text-[20px] sm:text-[18px] pb-2 text-start font-light">
