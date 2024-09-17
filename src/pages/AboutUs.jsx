@@ -29,7 +29,7 @@ const AboutUs = () => {
         <div className="ms-10 me-5 flex sm:justify-center justify-start items-center sm:flex-nowrap flex-wrap gap-12">
           <div className="lg:rounded-full xl:w-1/3 lg:w-1/2 sm:w-3/4 rounded-md">
             <img
-              src="/images/volunteer.png"
+              src="/images/about.png"
               alt="Our Mission"
               className="object-cover object-center rounded-md"
             />
