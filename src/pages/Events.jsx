@@ -11,8 +11,8 @@ const Events = () => {
             className="object-cover sm:h-[470px] h-full w-dvw"
           />
         </div>
-        <div className="w-full absolute sm:top-[50%] top-[30%] text-[#FAF5E0] md:ms-10 flex justify-start items-center">
-          <h1 className="md:text-3xl text-2xl font-semibold lg:w-1/5 sm:w-1/3 me-5 ms-5">
+        <div className="w-full absolute sm:top-[50%] top-[30%] text-[#FAF5E0] md:ps-10 flex justify-start items-center">
+          <h1 className="md:text-3xl text-2xl font-semibold lg:w-1/5 sm:w-1/3 pe-5 ps-5">
             Free Your Mind To{" "}
             <span className="text-[#087167] font-bold">Find</span> Your Zen
           </h1>
