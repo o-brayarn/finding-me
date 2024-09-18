@@ -7,3 +7,4 @@ export { default as Featured } from "./Featured";
 export { default as Feedback } from "./Feedback";
 export { default as CallToAction } from "./CallToAction";
 export { default as SocialProof } from "./SocialProof";
+export { default as Search } from "./Search";
