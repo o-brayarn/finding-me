@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { IoChevronDown } from "react-icons/io5";
 import { RiCloseLine, RiMenu3Fill } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
+import Search from "./Search";
 
 const NavLinks = ({
   isOpen,
@@ -117,12 +118,31 @@ const NavLinks = ({
     </ul>
   );
 };
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [clickDropdown, setClickDropdown] = useState(false);
   const [isDropdown, setIsDropdown] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const navigate = useNavigate();
+
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
+
+  const DisableScroll = ({ open }) => {
+    useEffect(() => {
+      if (open) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "unset";
+      }
+    }, [open]);
+
+    return null;
+  };
+
   return (
     <nav className="bg-[#087167] text-[#FAF5E0] sticky top-0 z-[20] shadow-sm">
       <div className="sm:me-5 sm:ms-5  flex justify-between items-center p-3 flex-wrap">
@@ -154,7 +174,10 @@ const Navbar = () => {
           >
             Contact
           </button>
-          <button className={`${!isOpen ? "" : "hidden"}`}>
+          <button
+            className={`${!isOpen ? "" : "hidden"}`}
+            onClick={toggleSearch}
+          >
             <FaSearch size={20} />
           </button>
 
@@ -175,6 +198,14 @@ const Navbar = () => {
               isDropdown={isDropdown}
               setIsDropdown={setIsDropdown}
             />
+          </div>
+        )}
+
+        {setIsSearchOpen && <DisableScroll open={isSearchOpen} />}
+
+        {isSearchOpen && (
+          <div className="fixed">
+            <Search toggleSearch={toggleSearch} />
           </div>
         )}
       </div>
