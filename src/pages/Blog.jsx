@@ -80,7 +80,7 @@ const Blog = () => {
           <h1 className="font-bold lg:text-2xl text-xl">{blogData[0].title}</h1>
           <h3 className="text-[14px] italic mb-2">{blogData[0].date}</h3>
           <p>{blogData[0].content}</p>
-          <button className="bg-[#FAF5E0] text-[#087167] font-bold px-3 py-2 mt-2 rounded-md pb-2">
+          <button className="bg-[#FAF5E0]  text-[#087167]  hover:bg-[#06141B] hover:text-[#FAF5E0] font-bold px-3 py-2 mt-2 rounded-md pb-2">
             Read More
           </button>
         </div>
@@ -94,14 +94,14 @@ const Blog = () => {
           </h1>
         </div>
 
-        <div className="mt-5 flex justify-center gap-4 flex-wrap sm:ms-0 sm:me-0 ms-10 text-[#06141B]">
+        <div className="mt-5 flex justify-center gap-4 flex-wrap sm:ms-0 sm:me-0 ms-10 text-[#06141B] ">
           {blogData?.slice(0, 8).map((blog, i) => {
             return (
               <div
                 key={i}
-                className="lg:w-1/5 sm:1/4 w-auto border border-[#087167] rounded-md shadow-md p-2"
+                className="lg:w-1/5 sm:1/4 w-auto border bg-[#087167]/[10%] border-[#087167] rounded-md shadow-md p-2"
               >
-                <div className="bg-[#F5F5F5] max-w-sm rounded-md">
+                <div className=" max-w-sm rounded-md">
                   <img
                     src={blog.src}
                     alt={blog.title.substring(0, 30)}
@@ -114,7 +114,7 @@ const Blog = () => {
                     </h1>
                     <h3 className="text-[14px] italic mb-2">{blog.date}</h3>
                     <p>{blog.content.substring(0, 180)}...</p>
-                    <button className="text-[#FAF5E0] bg-[#087167] font-bold px-3 py-2 mt-2 rounded-md mb-4">
+                    <button className="bg-[#06141B] text-[#FAF5E0] hover:bg-[#087167] font-bold px-3 py-2 mt-2 rounded-md mb-4">
                       Read More
                     </button>
                   </div>
@@ -124,7 +124,7 @@ const Blog = () => {
           })}
         </div>
         <div className="sm:mt-8 mt-5 flex justify-center items-center">
-          <button className="text-[#FAF5E0] bg-[#3A66B1] py-2 px-5 rounded-2xl">
+          <button className="text-[#FAF5E0] bg-[#087167] hover:bg-[#06141B] py-2 px-5 rounded-2xl">
             Load more posts
           </button>
         </div>

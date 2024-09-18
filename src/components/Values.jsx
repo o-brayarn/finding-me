@@ -53,20 +53,13 @@ const Values = () => {
           return (
             <div
               key={index}
-              className="mt-4 shadow-2xl backdrop-blur-3xl bg-[#FAFAFA] p-4 w-3/4 sm:w-3/4 md:w-2/5 lg:w-1/3 xl:w-1/4"
+              className="rounded-md border-2 border-b-[#087167]/[70%] border-l-[#087167]/[70%] mt-4 shadow-2xl backdrop-blur-3xl bg-[#FAFAFA] p-4 w-3/4 sm:w-3/4 md:w-2/5 lg:w-1/3 xl:w-1/4"
             >
-              <div className="flex justify-center items-center gap-8">
-                <div className="">
-                  <h1 className="uppercase text-7xl font-bold mt-auto text-[#E68B67]">
-                    {data.index}
-                  </h1>
-                </div>
-                <div className="flex flex-col justify-center gap-3">
-                  <h1 className="uppercase font-semibold text-[#087167]">
-                    {data.title}
-                  </h1>
-                  <p>{data.content}</p>
-                </div>
+              <div className="flex flex-col justify-center gap-3">
+                <h1 className="text-2xl uppercase font-semibold text-[#087167]">
+                  {data.title}
+                </h1>
+                <p>{data.content}</p>
               </div>
             </div>
           );

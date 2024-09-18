@@ -14,13 +14,13 @@ const CallToAction = () => {
           <p className="text-xl font-semibold text-center uppercase">Donate</p>
         </div>
         <div className="bg-[#FAF5E0]/60 rounded-md flex flex-col justify-center items-center gap-4 lg:w-1/5 md:w-1/4 sm:w-1/3 w-3/5 pt-10 pb-10 cursor-pointer">
-          <FaHandshake className="text-[#FAF5E0] text-[40px]" />
+          <FaHandshake className="text-[#06141B] text-[40px]" />
           <p className="text-xl font-semibold text-center text-[#087167] uppercase">
             Partner <span className="text-[#06141B]">With</span> Us
           </p>
         </div>
         <div className="bg-[#FAF5E0]/60 rounded-md flex flex-col justify-center items-center gap-4 lg:w-1/5 md:w-1/4 sm:w-1/3 w-3/5 pt-10 pb-10 cursor-pointer">
-          <FaUsers className="text-[#E68B67] text-[40px]" />
+          <FaUsers className="text-[#06141B] text-[40px]" />
           <p className="text-xl font-semibold text-center text-[#087167] uppercase">
             Join <span className="text-[#06141B]">Our</span> Forums
           </p>
