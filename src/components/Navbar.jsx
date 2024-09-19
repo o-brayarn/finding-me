@@ -16,7 +16,7 @@ const NavLinks = ({
   return (
     <ul
       className={`lg:flex justify-around items-center ${
-        isOpen ? "" : "space-x-10 hidden"
+        isOpen ? "" : "xl:space-x-10 space-x-5 hidden"
       }`}
     >
       <li className="py-4 hover:underline hover:font-bold">
@@ -168,7 +168,7 @@ const Navbar = () => {
         <div className="flex justify-center items-center sm:gap-8 gap-2">
           <button
             onClick={() => navigate("/contact")}
-            className={`md:flex border p-1 font-bold sm:text-2xl rounded-xl hidden ${
+            className={`md:flex border py-1 px-2 font-bold lg:text-xl rounded-xl hidden ${
               !isOpen ? "" : "md:hidden"
             }`}
           >
